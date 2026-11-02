@@ -1,0 +1,9 @@
+.terraform/
+*.tfstate
+*.tfstate.*
+*.bak
+__pycache__
+.pytest_cache/
+.DS_Store
+lambda_package.zip
+learn.md
