@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+echo "FAKE_AWS_CALLED: $*" >> "${FAKE_AWS_LOG:-/tmp/fake_aws.log}"
+exit 0

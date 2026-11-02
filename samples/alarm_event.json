@@ -1,0 +1,45 @@
+{
+  "version": "0",
+  "id": "7bf73129-1428-4cd3-a780-95db273d1602",
+  "detail-type": "CloudWatch Alarm State Change",
+  "source": "aws.cloudwatch",
+  "account": "123456789012",
+  "time": "2026-10-21T03:14:00Z",
+  "region": "ap-southeast-2",
+  "resources": [
+    "arn:aws:cloudwatch:ap-southeast-2:123456789012:alarm:DiskUsageHigh"
+  ],
+  "detail": {
+    "alarmName": "DiskUsageHigh",
+    "state": {
+      "value": "ALARM",
+      "reason": "Threshold Crossed",
+      "timestamp": "2026-10-21T03:14:00.000+0000"
+    },
+    "previousState": {
+      "value": "OK",
+      "reason": "Threshold not crossed",
+      "timestamp": "2026-10-21T03:10:00.000+0000"
+    },
+    "configuration": {
+      "metrics": [
+        {
+          "id": "m1",
+          "metricStat": {
+            "metric": {
+              "namespace": "KangaNews/Disk",
+              "name": "UsedPercent",
+              "dimensions": {
+                "InstanceId": "i-0123456789abcdef0",
+                "Path": "/"
+              }
+            },
+            "period": 60,
+            "stat": "Average"
+          },
+          "returnData": true
+        }
+      ]
+    }
+  }
+}
